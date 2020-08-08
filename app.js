@@ -77,8 +77,6 @@ function costCalculation(req)
 	let TotalWeight=0;
 	let CostAmount=0;
 
-	// console.log('TotalWeight');
-	// console.log(TotalWeight);
 
 	if(req.query.txtstate!=req.query.txtRstate)
 	{
@@ -91,8 +89,6 @@ function costCalculation(req)
 	{
 		 TotalWeight=req.query.txtweight;
 	}
-	console.log('TotalWeight');
-	console.log(TotalWeight);
 
 	if(shipmentAmount>2 || shipmentAmount<21)
 	{
@@ -102,8 +98,7 @@ function costCalculation(req)
 	{
 		CostAmount=2*TotalWeight;
 	}
-	console.log('TotalWeight');
-	console.log(CostAmount);
+	
 	return CostAmount;
 }
 module.exports = app;
