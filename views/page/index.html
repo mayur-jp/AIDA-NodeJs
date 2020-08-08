@@ -1,0 +1,102 @@
+
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Shipment</title> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap-grid.css" rel="stylesheet" type="text/css">
+    <link href="../../node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <style type="text/css" media="screen"> 
+      body {font-family: Arial, Helvetica, sans-serif;}
+        * {box-sizing: border-box}
+        input[type=text] {
+            width: 50%;
+            padding: 5px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            };
+            select[name=ddlunit]{
+            width: 50%;
+            padding: 5px;
+            margin: 5px 0 22px 0;
+            display: inline-block;
+            border: none;
+            background: #f1f1f1;
+            };
+            button:hover {
+  opacity: 0.8;
+}
+@media (max-width: 600px) {
+  .row {
+    flex-direction: column-reverse;
+  }
+}
+    </style>
+</head> 
+<body>
+    <div class="container">
+    <form action="/cost" method="GET">
+    <h3>Enter Shipping Details</h3>
+    
+
+        <div class="form-group col-12">
+            
+            <input type="text" name="txtName" placeholder="Enter the Name">
+        </div> 
+        <div class="form-group col-12">
+            
+            <input type="text" name="txtshippingadd" placeholder="Enter shippingAddress">
+        </div>
+        
+        <div class="form-group col-12">
+           
+            <input type="text" name="txtstate" placeholder=" Enter state">
+        
+        </div>
+
+        <div class="form-group col-12">
+            <input type="text" name="txtproduct" placeholder="Enter product">
+        </div>
+
+        <div class="form-group col-12">
+            <input type="text" name="txtweight" placeholder="weight">
+        </div>
+
+        <div class="form-group col-12">
+            Unit <br/>
+            <select name="ddlunit" >
+                <option value="LB">LB</option>
+                <option value="KG">KG</option>
+            </select>
+        </div>
+
+        <div class="form-group col-12">
+            
+            <input type="text" name="txtshipment" placeholder="shipment ">
+        </div>
+   
+
+        <div class="form-group ">
+            <h3>Enter Receiving Details</h3>
+            <div class="form-group col-12">
+                
+                <input type="text" name="txtreceivingadd" placeholder="Enter ReceivingAddress">
+            </div>
+            <div class="form-group col-12">
+                
+                <input type="text" name="txtRstate" placeholder="Enter state">
+            </div>
+        </div>
+
+  
+    <input type="submit" name="Submit" class="form-control">
+
+   
+</form>
+</div>
+</body>
+</html>
